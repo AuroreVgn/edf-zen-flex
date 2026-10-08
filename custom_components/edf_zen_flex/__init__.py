@@ -1,18 +1,11 @@
-"""EDF Zen Flex with bundled dashboard card."""
-from pathlib import Path
+"""Intégration EDF Zen Flex pour Home Assistant."""
 from datetime import timedelta
 from .const import DEFAULT_INTERVAL
-from homeassistant.components.http import StaticPathConfig
 from homeassistant.const import Platform
 from homeassistant.core import callback
 from homeassistant.helpers.event import async_track_utc_time_change, async_track_time_change
 from .const import DOMAIN
 from .coordinator import ZenCoordinator
-
-async def async_setup(hass, config):
-    await hass.http.async_register_static_paths([StaticPathConfig(
-        "/edf_zen_flex/zen-flex-card.js", str(Path(__file__).parent / "www" / "zen-flex-card.js"), False)])
-    return True
 
 async def async_setup_entry(hass, entry):
     coordinator = ZenCoordinator(hass, entry)
