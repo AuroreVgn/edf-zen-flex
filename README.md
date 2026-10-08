@@ -32,21 +32,48 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 - Bouton d'actualisation manuelle.
 - Compatibilité avec une [carte Lovelace dédiée](https://github.com/AuroreVgn/edf-zen-flex-card), maintenue dans un dépôt séparé.
 
-## 📦 Installation
+## Installation
 
-### Avec HACS (dépôt personnalisé)
+### Option A — HACS (recommandé)
 
-1. Ouvrir **HACS** dans Home Assistant.
-2. Ajouter `https://github.com/AuroreVgn/edf-zen-flex` comme **dépôt personnalisé** de catégorie **Intégration**.
-3. Rechercher **EDF Zen Flex** et l'installer.
-4. Redémarrer Home Assistant.
-5. Aller dans **Paramètres → Appareils et services → Ajouter une intégration**, puis rechercher **EDF Zen Flex**.
+#### Automatiquement
 
-> Les étapes HACS supposent que les fichiers de l'intégration sont bien publiés dans le dépôt. La première release GitHub `0.0.1` est à créer séparément.
+[![Ouvrir Home Assistant et ajouter ce dépôt dans HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AuroreVgn&repository=edf-zen-flex&category=integration)
 
-### Installation manuelle
+#### Manuellement
 
-Copier le dossier `custom_components/edf_zen_flex` du dépôt dans `<config>/custom_components/edf_zen_flex`, puis redémarrer Home Assistant et ajouter l'intégration depuis **Appareils et services**.
+Cette intégration étant un dépôt personnalisé, il faut l'ajouter une première fois dans HACS :
+
+1. Ouvrir **HACS** → **Intégrations**.
+2. Ouvrir le menu **⋮** → **Dépôts personnalisés**.
+3. Ajouter :
+
+   ```text
+   https://github.com/AuroreVgn/edf-zen-flex
+   ```
+
+4. Choisir la catégorie **Intégration**.
+5. Rechercher **EDF Zen Flex** dans HACS puis installer l'intégration.
+6. Redémarrer Home Assistant.
+
+### Option B — Installation manuelle
+
+1. Télécharger la dernière version du dépôt.
+2. Copier le dossier :
+
+   ```text
+   custom_components/edf_zen_flex
+   ```
+
+   dans :
+
+   ```text
+   /config/custom_components/edf_zen_flex
+   ```
+
+3. Redémarrer Home Assistant.
+
+Après l'installation, aller dans **Paramètres → Appareils et services → Ajouter une intégration**, puis rechercher **EDF Zen Flex**.
 
 ## ⚙️ Configuration
 
