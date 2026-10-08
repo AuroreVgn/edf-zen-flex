@@ -32,7 +32,7 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 - Bouton d'actualisation manuelle.
 - Compatibilité avec une [carte Lovelace dédiée](https://github.com/AuroreVgn/edf-zen-flex-card), maintenue dans un dépôt séparé.
 
-## Installation
+## 📦 Installation
 
 ### Option A — HACS (recommandé)
 
@@ -163,7 +163,7 @@ Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure d
 
 Une vérification infructueuse ne remplace pas les tarifs existants.
 
-## 🗓️ Carte Lovelace
+## 🧩 Carte Lovelace
 
 La carte est distribuée dans un dépôt distinct : **[EDF Zen Flex Card](https://github.com/AuroreVgn/edf-zen-flex-card)**.
 
@@ -178,7 +178,7 @@ Elle permet notamment d'afficher le calendrier des journées, les compteurs et l
 - Les données et compteurs sont calculés sur l'année civile, en heure de Paris.
 - La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
 
-## 🐞 Signaler un problème
+## 🤝 Signaler un problème
 
 Ouvrir une [issue GitHub](https://github.com/AuroreVgn/edf-zen-flex/issues) en indiquant la version de Home Assistant, la version de l'intégration, le comportement attendu et les journaux utiles **sans données personnelles**.
 
