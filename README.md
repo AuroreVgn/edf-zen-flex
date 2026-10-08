@@ -157,7 +157,7 @@ Ouvrir une [issue GitHub](https://github.com/AuroreVgn/edf-zen-flex/issues) en i
 
 ## 📄 Licence
 
-Les informations de licence seront ajoutées au dépôt lors de la publication définitive.
+Ce projet est distribué sous licence **MIT**. Consultez le fichier [LICENSE](LICENSE).
 
 ---
 
