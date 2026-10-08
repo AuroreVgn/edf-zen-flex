@@ -1,0 +1,103 @@
+{
+  "title": "EDF Zen Flex",
+  "config": {
+    "step": {
+      "user": {
+        "title": "EDF Zen Flex",
+        "description": "Public EDF endpoint.\n\nRecorded history starts at installation.",
+        "data": {
+          "interval": "Refresh interval (minutes)"
+        }
+      },
+      "tariffs": {
+        "title": "Contract rates and off-peak periods",
+        "description": "Reference: EDF new subscriptions from 15 September 2026.\n\nCheck your contract before confirming.\n\nPrices are stored locally and are not automatically updated.\n\nOff-peak hours:\n\n• 00:00–08:00\n\n• 13:00–18:00\n\n• 20:00–24:00.\n\nAll other periods are peak.\n\nEurope/Paris time.\n\n**If the pre-filled rates match your contract, leave “Re-import published EDF rates” unchecked, confirm the rates and submit to continue.**\n\nTo fetch the latest public grid, check “Re-import published EDF rates” and submit. You will need to submit again after reviewing the imported rates.\n\nImported values are shown again for review; confirmation is cleared.",
+        "data": {
+          "eco_hc": "Eco off-peak (EUR/kWh incl. tax)",
+          "eco_hp": "Eco peak (EUR/kWh incl. tax)",
+          "sobriete_hc": "Sobriety off-peak (EUR/kWh incl. tax)",
+          "sobriete_hp": "Sobriety peak (EUR/kWh incl. tax)",
+          "tariffs_confirmed": "I confirm these rates and hours for my contract",
+          "tariff_date": "Rates effective date",
+          "tariff_source": "Rate source (URL or bill reference)",
+          "hc_periods": "Off-peak ranges (HH:MM-HH:MM, comma-separated)",
+          "import_published_tariffs": "Import EDF published rates (then review)"
+        }
+      },
+      "history": {
+        "title": "Annual opening count",
+        "description": "Optional: enter the verified total sobriety days from January 1 through the selected date, inclusive.\n\nOnly later observations will be added.\n\nMissing days leave the balance unknown.\n\nA prior-year baseline is ignored in the new year.\n\nInclude the verified Bonus total, including zero if none.\n\nFor past days, see the [Hello Watt EDF Zen Flex calendar](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "data": {
+          "baseline_enabled": "Enter days before installation",
+          "baseline_date": "Count through this date, inclusive",
+          "baseline_count": "Sobriety days consumed through that date",
+          "baseline_bonus_count": "Bonus days consumed through that date"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to EDF. Try again later.",
+      "invalid_response": "Invalid EDF response.",
+      "invalid_tariffs": "Check prices, dates and non-overlapping off-peak time ranges.",
+      "invalid_baseline": "Check the date and opening counts (Sobriety 0–20; Bonus cannot exceed Eco days).",
+      "cannot_import_tariffs": "EDF public grid unavailable or changed. Stored rates were kept.",
+      "tariffs_not_confirmed": "Confirm the rates and off-peak hours to activate the current kWh price."
+    },
+    "abort": {
+      "already_configured": "Already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EDF Zen Flex — Options",
+        "menu_options": {
+          "tariffs": "Contract rates and off-peak hours",
+          "history": "Initial day counters",
+          "interval": "Refresh interval",
+          "import_tariffs": "Import EDF published rates"
+        }
+      },
+      "tariffs": {
+        "title": "Contract rates and off-peak periods",
+        "description": "Check your contract prices and hours, then confirm and submit.\n\nThis saves the rates immediately.\n\nPublished rates can be imported separately from the options menu.",
+        "data": {
+          "eco_hc": "Eco off-peak (EUR/kWh incl. tax)",
+          "eco_hp": "Eco peak (EUR/kWh incl. tax)",
+          "sobriete_hc": "Sobriety off-peak (EUR/kWh incl. tax)",
+          "sobriete_hp": "Sobriety peak (EUR/kWh incl. tax)",
+          "tariffs_confirmed": "I confirm these rates and hours for my contract",
+          "tariff_date": "Rates effective date",
+          "tariff_source": "Rate source (URL or bill reference)",
+          "hc_periods": "Off-peak ranges (HH:MM-HH:MM, comma-separated)"
+        }
+      },
+      "history": {
+        "title": "Annual opening count",
+        "description": "Optional: enter the verified total sobriety days from January 1 through the selected date, inclusive.\n\nOnly later observations will be added.\n\nMissing days leave the balance unknown.\n\nA prior-year baseline is ignored in the new year.\n\nInclude the verified Bonus total, including zero if none.\n\nFor past days, see the [Hello Watt EDF Zen Flex calendar](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "data": {
+          "baseline_enabled": "Enter days before installation",
+          "baseline_date": "Count through this date, inclusive",
+          "baseline_count": "Sobriety days consumed through that date",
+          "baseline_bonus_count": "Bonus days consumed through that date"
+        }
+      },
+      "interval": {
+        "title": "Refresh",
+        "data": {
+          "interval": "Refresh interval (minutes)"
+        }
+      },
+      "import_tariffs": {
+        "title": "Import EDF rates",
+        "description": "Fetch the published rates, then review and confirm them on the next screen.\n\nNothing is saved until you submit that screen."
+      }
+    },
+    "error": {
+      "invalid_tariffs": "Check prices, dates and non-overlapping off-peak time ranges.",
+      "invalid_baseline": "Check the date and opening counts (Sobriety 0–20; Bonus cannot exceed Eco days).",
+      "cannot_import_tariffs": "EDF public grid unavailable or changed. Stored rates were kept.",
+      "tariffs_not_confirmed": "Confirm the rates and off-peak hours to activate the current kWh price."
+    }
+  }
+}

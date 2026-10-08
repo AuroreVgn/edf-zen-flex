@@ -1,0 +1,103 @@
+{
+  "title": "EDF Zen Flex",
+  "config": {
+    "step": {
+      "user": {
+        "title": "EDF Zen Flex",
+        "description": "Connexion publique à EDF, sans compte.\n\nL’historique commence à l’installation.",
+        "data": {
+          "interval": "Intervalle d’actualisation (minutes)"
+        }
+      },
+      "tariffs": {
+        "title": "Tarifs du contrat et heures creuses",
+        "description": "Référence préremplie : nouvelles souscriptions EDF au 15 septembre 2026.\n\nVérifiez votre contrat avant de confirmer.\n\nLes prix sont enregistrés localement, sans mise à jour automatique.\n\nPlages horaires des heures creuses :\n\n• 00h00 – 08h00\n\n• 13h00 – 18h00\n\n• 20h00 – 24h00.\n\nLe reste de la journée est en HP.\n\nFuseau Europe/Paris.\n\n**Si les tarifs préremplis correspondent à votre contrat, laissez la case « Réimporter la grille EDF publiée » décochée, cochez la confirmation puis cliquez sur Valider pour continuer.**\n\nPour récupérer la grille publique à jour, cochez « Réimporter la grille EDF publiée » puis validez : une deuxième validation sera nécessaire après vérification des nouveaux tarifs.\n\nLes valeurs importées sont réaffichées pour vérification et la confirmation est décochée.",
+        "data": {
+          "eco_hc": "Éco — heures creuses (€/kWh TTC)",
+          "eco_hp": "Éco — heures pleines (€/kWh TTC)",
+          "sobriete_hc": "Sobriété — heures creuses (€/kWh TTC)",
+          "sobriete_hp": "Sobriété — heures pleines (€/kWh TTC)",
+          "tariffs_confirmed": "Je confirme ces tarifs et horaires pour mon contrat",
+          "tariff_date": "Date d’application des tarifs",
+          "tariff_source": "Source des tarifs (URL ou référence de facture)",
+          "hc_periods": "Plages heures creuses (HH:MM-HH:MM, séparées par des virgules)",
+          "import_published_tariffs": "Réimporter la grille EDF publiée (puis vérifier les valeurs)"
+        }
+      },
+      "history": {
+        "title": "Compteur initial annuel",
+        "description": "Facultatif : indiquez le total vérifié des jours Sobriété depuis le 1er janvier jusqu’à la date choisie incluse.\n\nSeuls les jours suivants seront ajoutés.\n\nSi des jours manquent, le solde reste inconnu.\n\nLe compteur initial est ignoré dès le changement d’année.\n\nRenseignez également le total vérifié des jours Bonus, y compris zéro s’il n’y en a eu aucun.\n\nLes jours Éco passés sont calculés automatiquement, Bonus inclus.\n\nPour retrouver les journées passées, consultez le [calendrier EDF Zen Flex de Hello Watt](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "data": {
+          "baseline_enabled": "Renseigner les journées passées avant l’installation",
+          "baseline_date": "Compteur arrêté à cette date, journée incluse",
+          "baseline_count": "Jours Sobriété déjà consommés à cette date",
+          "baseline_bonus_count": "Jours Bonus déjà consommés à cette date"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre EDF. Réessayez plus tard.",
+      "invalid_response": "EDF a renvoyé une réponse invalide.",
+      "invalid_tariffs": "Vérifiez les prix, la date et les plages HC (format HH:MM-HH:MM, sans chevauchement).",
+      "invalid_baseline": "Vérifiez la date et les compteurs initiaux : Sobriété entre 0 et 20, Bonus au maximum égal au nombre de jours Éco écoulés.",
+      "cannot_import_tariffs": "Grille EDF indisponible ou format modifié. Les tarifs enregistrés ont été conservés.",
+      "tariffs_not_confirmed": "Confirmez les tarifs et les horaires pour activer le prix actuel du kWh."
+    },
+    "abort": {
+      "already_configured": "EDF Zen Flex est déjà configuré."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EDF Zen Flex — Options",
+        "menu_options": {
+          "tariffs": "Tarifs du contrat et heures creuses",
+          "history": "Compteurs initiaux des jours",
+          "interval": "Intervalle d’actualisation",
+          "import_tariffs": "Importer la grille EDF publiée"
+        }
+      },
+      "tariffs": {
+        "title": "Tarifs du contrat et heures creuses",
+        "description": "Vérifiez les prix et horaires de votre contrat, cochez la confirmation puis validez.\n\nLes tarifs sont enregistrés dès la validation de cet écran.\n\nPour importer une grille EDF, utilisez la rubrique séparée du menu des options.",
+        "data": {
+          "eco_hc": "Éco — heures creuses (€/kWh TTC)",
+          "eco_hp": "Éco — heures pleines (€/kWh TTC)",
+          "sobriete_hc": "Sobriété — heures creuses (€/kWh TTC)",
+          "sobriete_hp": "Sobriété — heures pleines (€/kWh TTC)",
+          "tariffs_confirmed": "Je confirme ces tarifs et horaires pour mon contrat",
+          "tariff_date": "Date d’application des tarifs",
+          "tariff_source": "Source des tarifs (URL ou référence de facture)",
+          "hc_periods": "Plages heures creuses (HH:MM-HH:MM, séparées par des virgules)"
+        }
+      },
+      "history": {
+        "title": "Compteur initial annuel",
+        "description": "Facultatif : indiquez le total vérifié des jours Sobriété depuis le 1er janvier jusqu’à la date choisie incluse.\n\nSeuls les jours suivants seront ajoutés.\n\nSi des jours manquent, le solde reste inconnu.\n\nLe compteur initial est ignoré dès le changement d’année.\n\nRenseignez également le total vérifié des jours Bonus, y compris zéro s’il n’y en a eu aucun.\n\nLes jours Éco passés sont calculés automatiquement, Bonus inclus.\n\nPour retrouver les journées passées, consultez le [calendrier EDF Zen Flex de Hello Watt](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "data": {
+          "baseline_enabled": "Renseigner les journées passées avant l’installation",
+          "baseline_date": "Compteur arrêté à cette date, journée incluse",
+          "baseline_count": "Jours Sobriété déjà consommés à cette date",
+          "baseline_bonus_count": "Jours Bonus déjà consommés à cette date"
+        }
+      },
+      "interval": {
+        "title": "Actualisation",
+        "data": {
+          "interval": "Intervalle d’actualisation (minutes)"
+        }
+      },
+      "import_tariffs": {
+        "title": "Importer la grille EDF",
+        "description": "Validez pour récupérer la grille publique EDF.\n\nVous pourrez ensuite vérifier et confirmer les tarifs sur l’écran suivant.\n\nRien n’est enregistré avant la validation de cet écran."
+      }
+    },
+    "error": {
+      "invalid_tariffs": "Vérifiez les prix, la date et les plages HC (format HH:MM-HH:MM, sans chevauchement).",
+      "invalid_baseline": "Vérifiez la date et les compteurs initiaux : Sobriété entre 0 et 20, Bonus au maximum égal au nombre de jours Éco écoulés.",
+      "cannot_import_tariffs": "Grille EDF indisponible ou format modifié. Les tarifs enregistrés ont été conservés.",
+      "tariffs_not_confirmed": "Confirmez les tarifs et les horaires pour activer le prix actuel du kWh."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "edf_zen_flex",
+  "name": "EDF Zen Flex",
+  "version": "0.2.0-beta10",
+  "config_flow": true,
+  "single_config_entry": true,
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "codeowners": [
+    "@AuroreVgn"
+  ],
+  "documentation": "https://github.com/AuroreVgn/edf-zen-flex",
+  "issue_tracker": "https://github.com/AuroreVgn/edf-zen-flex/issues"
+}
