@@ -1,7 +1,7 @@
 {
   "domain": "edf_zen_flex",
   "name": "EDF Zen Flex",
-  "version": "0.2.0-beta10",
+  "version": "0.0.1",
   "config_flow": true,
   "single_config_entry": true,
   "integration_type": "service",
