@@ -9,6 +9,14 @@ Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricit
 > [!IMPORTANT]
 > Projet communautaire non officiel, indépendant d'EDF. Les prix publics proposés par EDF ne correspondent pas nécessairement aux tarifs de votre contrat. Vérifiez toujours votre facture ou vos conditions contractuelles.
 
+## 🏠 Mes projets Home Assistant
+
+[Découvrir mes projets Home Assistant](https://gentle-suggestion-7c3.notion.site/Mes-projets-Home-Assistant-3eda02eefa8f81a48621c3caeef7fa8e)
+
+## ☕ Soutenir le projet
+
+Si cette intégration vous est utile, vous pouvez [soutenir son développement sur Ko-fi](https://ko-fi.com/aurorevgn).
+
 ## ✨ Fonctionnalités
 
 - Consultation des journées **aujourd'hui** et **demain** via le service public EDF, sans compte ni identifiants.
@@ -174,10 +182,6 @@ Elle permet notamment d'afficher le calendrier des journées, les compteurs et l
 
 Ouvrir une [issue GitHub](https://github.com/AuroreVgn/edf-zen-flex/issues) en indiquant la version de Home Assistant, la version de l'intégration, le comportement attendu et les journaux utiles **sans données personnelles**.
 
-## ☕ Soutenir le projet
-
-Si cette intégration vous est utile, vous pouvez [soutenir son développement sur Ko-fi](https://ko-fi.com/aurorevgn).
-
 ## 📄 Licence
 
 Ce projet est distribué sous licence **MIT**. Consultez le fichier [LICENSE](LICENSE).
@@ -185,7 +189,3 @@ Ce projet est distribué sous licence **MIT**. Consultez le fichier [LICENSE](LI
 ---
 
 **EDF Zen Flex** est un projet indépendant, développé pour la communauté Home Assistant.
-
-## 🏠 Mes projets Home Assistant
-
-[Découvrir mes projets Home Assistant](https://gentle-suggestion-7c3.notion.site/Mes-projets-Home-Assistant-3eda02eefa8f81a48621c3caeef7fa8e)
