@@ -1,8 +1,10 @@
 ---
-name: "💬 Autre demande (FR)"
-about: "Poser une question ou faire une autre demande concernant EDF Zen Flex"
+name: "\U0001F4AC Autre demande (FR)"
+about: Poser une question ou faire une autre demande concernant EDF Zen Flex
 title: "[QUESTION] - "
+labels: ''
 assignees: AuroreVgn
+
 ---
 
 ### Objet de la demande

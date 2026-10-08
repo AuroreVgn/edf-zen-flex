@@ -1,8 +1,10 @@
 ---
-name: "💡 Proposer une amélioration (FR)"
-about: "Proposer une fonctionnalité ou une amélioration pour EDF Zen Flex"
+name: "\U0001F4A1 Proposer une amélioration (FR)"
+about: Proposer une fonctionnalité ou une amélioration pour EDF Zen Flex
 title: "[AMÉLIORATION] - "
+labels: ''
 assignees: AuroreVgn
+
 ---
 
 ### Version de l'intégration (facultatif)
