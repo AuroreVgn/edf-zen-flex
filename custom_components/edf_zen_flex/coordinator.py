@@ -23,7 +23,6 @@ class ZenCoordinator(DataUpdateCoordinator):
         self.store = Store(hass, 1, f"{DOMAIN}.{entry.entry_id}")
         self.history = {}
         self.last_success = None
-        self.entry = entry
         self.tariff_watch = {}
 
     @property
