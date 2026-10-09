@@ -1,10 +1,10 @@
 # ⚡ EDF Zen Flex
 
-[![Release](https://img.shields.io/github/v/release/AuroreVgn/edf-zen-flex?label=release)](https://github.com/AuroreVgn/edf-zen-flex/releases)
-[![Licence MIT](https://img.shields.io/badge/licence-MIT-brightgreen)](LICENSE)
-[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5)](https://www.hacs.xyz/)
-[![Maintainer](https://img.shields.io/badge/maintainer-%40AuroreVgn-0078D7)](https://github.com/AuroreVgn)
-[![Ko--fi](https://img.shields.io/badge/Ko--fi-Soutenir-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/aurorevgn)
+[![Release](https://img.shields.io/github/v/release/AuroreVgn/edf-zen-flex?label=release&style=flat-square)](https://github.com/AuroreVgn/edf-zen-flex/releases)
+[![Licence MIT](https://img.shields.io/badge/licence-MIT-brightgreen?style=flat-square)](LICENSE)
+[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5?style=flat-square)](https://www.hacs.xyz/)
+[![Maintainer](https://img.shields.io/badge/maintainer-%40AuroreVgn-0078D7?style=flat-square)](https://github.com/AuroreVgn)
+[![Ko--fi](https://img.shields.io/badge/Ko--fi-Soutenir-FF5E5B?logo=kofi&logoColor=white&style=flat-square)](https://ko-fi.com/aurorevgn)
 
 Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricité **EDF Zen Flex** : consultation des journées Éco, Sobriété et Bonus, suivi annuel, tarifs heures pleines/heures creuses et surveillance des grilles tarifaires.
 
