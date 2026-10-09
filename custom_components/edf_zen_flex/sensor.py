@@ -1,6 +1,6 @@
 """États EDF, tarifs et compteurs annuels vérifiables."""
 
-from datetime import datetime
+from datetime import date, datetime
 from homeassistant.components.sensor import SensorEntity, SensorDeviceClass
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from homeassistant.helpers.entity import EntityCategory
@@ -158,11 +158,9 @@ class ZenSensor(CoordinatorEntity, SensorEntity):
         if self.key in ("current_price", "period"):
             return data["tariffs"][self.key]
         if self.key == "contract_tariff_date":
-            from datetime import date
             value = self.coordinator.settings.get("tariff_date")
             return date.fromisoformat(value) if value else None
         if self.key == "published_tariff_date":
-            from datetime import date
             value = data.get(self.key)
             return date.fromisoformat(value) if value else None
         if self.key == "tariff_last_checked":
