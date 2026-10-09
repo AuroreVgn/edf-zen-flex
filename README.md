@@ -1,8 +1,10 @@
 # ⚡ EDF Zen Flex
 
-[![Version](https://img.shields.io/github/v/release/AuroreVgn/edf-zen-flex?display_name=tag&label=version)](https://github.com/AuroreVgn/edf-zen-flex/releases)
-[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-intégration%20personnalisée-41BDF5?logo=homeassistant)](https://www.home-assistant.io/)
-[![HACS](https://img.shields.io/badge/HACS-dépôt%20personnalisé-41BDF5)](https://www.hacs.xyz/)
+[![Release](https://img.shields.io/github/v/release/AuroreVgn/edf-zen-flex?label=release)](https://github.com/AuroreVgn/edf-zen-flex/releases)
+[![Licence MIT](https://img.shields.io/badge/licence-MIT-brightgreen)](LICENSE)
+[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5)](https://www.hacs.xyz/)
+[![Maintainer](https://img.shields.io/badge/maintainer-%40AuroreVgn-0078D7)](https://github.com/AuroreVgn)
+[![Ko--fi](https://img.shields.io/badge/Ko--fi-Soutenir-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/aurorevgn)
 
 Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricité **EDF Zen Flex** : consultation des journées Éco, Sobriété et Bonus, suivi annuel, tarifs heures pleines/heures creuses et surveillance des grilles tarifaires.
 
