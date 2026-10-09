@@ -1,9 +1,9 @@
 """Intégration EDF Zen Flex pour Home Assistant."""
 from datetime import timedelta
-from .const import DEFAULT_INTERVAL
 from homeassistant.const import Platform
 from homeassistant.core import callback
 from homeassistant.helpers.event import async_track_utc_time_change, async_track_time_change
+from .const import DEFAULT_INTERVAL
 from .const import DOMAIN
 from .coordinator import ZenCoordinator
 
