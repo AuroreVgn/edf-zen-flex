@@ -1,0 +1,36 @@
+name: "✨ Proposer une amélioration"
+description: "Suggérer une nouvelle fonctionnalité ou une amélioration."
+title: "[Amélioration] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Merci de décrire votre idée pour l’intégration EDF Zen Flex et de vérifier qu’elle n’a pas déjà été proposée."
+  - type: textarea
+    id: need
+    attributes:
+      label: "Besoin ou problème rencontré"
+      description: "Quel besoin cette amélioration permettrait-elle de couvrir ?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Amélioration proposée"
+      description: "Décrivez le fonctionnement souhaité."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives envisagées"
+      description: "Facultatif : solutions alternatives, exemples ou captures."
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Vérification"
+      options:
+        - label: "J’ai vérifié qu’une demande similaire n’existe pas déjà."
+          required: true
