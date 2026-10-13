@@ -13,7 +13,7 @@ Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricit
 
 ## 🏠 Mes projets Home Assistant
 
-[Découvrir mes projets Home Assistant](https://gentle-suggestion-7c3.notion.site/Mes-projets-Home-Assistant-3eda02eefa8f81a48621c3caeef7fa8e)
+[Découvrir mes projets Home Assistant](https://erra.me)
 
 ## ☕ Soutenir le projet
 
