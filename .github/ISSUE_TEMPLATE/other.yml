@@ -1,0 +1,28 @@
+name: "💬 Autre demande"
+description: "Poser une question ou faire une proposition ne relevant pas d’un bug."
+title: "[Autre] "
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Type de demande"
+      options:
+        - Question
+        - Documentation
+        - Compatibilité
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Votre demande"
+      description: "Expliquez votre question ou votre proposition concernant l’intégration."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Contexte ou informations complémentaires"
+    validations:
+      required: false
