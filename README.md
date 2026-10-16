@@ -21,15 +21,17 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 
 ## 📑 Sommaire
 
-- [✨ Fonctionnalités](#-fonctionnalités)
-- [📦 Installation](#-installation)
-- [⚙️ Configuration](#-configuration)
-- [📊 Entités créées](#-entités-créées)
-- [🔔 Surveillance des tarifs EDF](#-surveillance-des-tarifs-edf)
-- [🧩 Carte Lovelace](#-carte-lovelace)
-- [ℹ️ Fonctionnement et limites](#ℹ-fonctionnement-et-limites)
-- [🤝 Signaler un problème](#-signaler-un-problème)
-- [📄 Licence](#-licence)
+- [✨ Fonctionnalités](#toc-section-1)
+- [📦 Installation](#toc-section-2)
+- [⚙️ Configuration](#toc-section-3)
+- [📊 Entités créées](#toc-section-4)
+- [🔔 Surveillance des tarifs EDF](#toc-section-5)
+- [🧩 Carte Lovelace](#toc-section-6)
+- [ℹ️ Fonctionnement et limites](#toc-section-7)
+- [🤝 Signaler un problème](#toc-section-8)
+- [📄 Licence](#toc-section-9)
+
+<a name="toc-section-1"></a>
 
 ## ✨ Fonctionnalités
 
@@ -45,6 +47,8 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 - Capteurs de diagnostic relatifs aux tarifs et aux actualisations.
 - Bouton d'actualisation manuelle.
 - Compatibilité avec une [carte Lovelace dédiée](https://github.com/AuroreVgn/edf-zen-flex-card), maintenue dans un dépôt séparé.
+
+<a name="toc-section-2"></a>
 
 ## 📦 Installation
 
@@ -89,6 +93,8 @@ Cette intégration étant un dépôt personnalisé, il faut l'ajouter une premi�
 
 Après l'installation, aller dans **Paramètres → Appareils et services → Ajouter une intégration**, puis rechercher **EDF Zen Flex**.
 
+<a name="toc-section-3"></a>
+
 ## ⚙️ Configuration
 
 L'assistant de configuration comprend trois étapes.
@@ -120,6 +126,8 @@ Si l'intégration est installée en cours d'année, vous pouvez indiquer, jusqu'
 Vous pouvez consulter les journées passées sur le [calendrier EDF Zen Flex de Hello Watt](https://www.hellowatt.fr/calendrier-zen-flex-edf/).
 
 Le compteur initial est propre à l'année civile et n'est pas reporté sur l'année suivante.
+
+<a name="toc-section-4"></a>
 
 ## 📊 Entités créées
 
@@ -169,6 +177,8 @@ Les icônes différencient les périodes HC et HP, ainsi que les jours Éco et S
 
 La date des **tarifs du contrat** et celle de la **dernière grille publique EDF** sont volontairement séparées. La seconde peut rester inconnue tant qu'aucune vérification publique n'a abouti.
 
+<a name="toc-section-5"></a>
+
 ## 🔔 Surveillance des tarifs EDF
 
 Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure de Paris**. Si la grille publique détectée diffère des tarifs enregistrés, une notification persistante Home Assistant est créée.
@@ -177,11 +187,15 @@ Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure d
 
 Une vérification infructueuse ne remplace pas les tarifs existants.
 
+<a name="toc-section-6"></a>
+
 ## 🧩 Carte Lovelace
 
 La carte est distribuée dans un dépôt distinct : **[EDF Zen Flex Card](https://github.com/AuroreVgn/edf-zen-flex-card)**.
 
 Elle permet notamment d'afficher le calendrier des journées, les compteurs et les prix de la période courante. Consultez son dépôt pour les instructions d'installation et de configuration.
+
+<a name="toc-section-7"></a>
 
 ## ℹ️ Fonctionnement et limites
 
@@ -192,9 +206,13 @@ Elle permet notamment d'afficher le calendrier des journées, les compteurs et l
 - Les données et compteurs sont calculés sur l'année civile, en heure de Paris.
 - La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
 
+<a name="toc-section-8"></a>
+
 ## 🤝 Signaler un problème
 
 Ouvrir une [issue GitHub](https://github.com/AuroreVgn/edf-zen-flex/issues) en indiquant la version de Home Assistant, la version de l'intégration, le comportement attendu et les journaux utiles **sans données personnelles**.
+
+<a name="toc-section-9"></a>
 
 ## 📄 Licence
 
