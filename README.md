@@ -19,6 +19,18 @@ Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricit
 
 Si cette intégration vous est utile, vous pouvez [soutenir son développement sur Ko-fi](https://ko-fi.com/aurorevgn).
 
+## 📑 Sommaire
+
+- [✨ Fonctionnalités](#-fonctionnalités)
+- [📦 Installation](#-installation)
+- [⚙️ Configuration](#-configuration)
+- [📊 Entités créées](#-entités-créées)
+- [🔔 Surveillance des tarifs EDF](#-surveillance-des-tarifs-edf)
+- [🧩 Carte Lovelace](#-carte-lovelace)
+- [ℹ️ Fonctionnement et limites](#ℹ-fonctionnement-et-limites)
+- [🤝 Signaler un problème](#-signaler-un-problème)
+- [📄 Licence](#-licence)
+
 ## ✨ Fonctionnalités
 
 - Consultation des journées **aujourd'hui** et **demain** via le service public EDF, sans compte ni identifiants.
