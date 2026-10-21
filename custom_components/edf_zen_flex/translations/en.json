@@ -74,7 +74,7 @@
       },
       "history": {
         "title": "Annual opening count",
-        "description": "Optional: enter the verified total sobriety days from January 1 through the selected date, inclusive.\n\nOnly later observations will be added.\n\nMissing days leave the balance unknown.\n\nA prior-year baseline is ignored in the new year.\n\nInclude the verified Bonus total, including zero if none.\n\nFor past days, see the [Hello Watt EDF Zen Flex calendar](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "description": "Optional: enter the verified total sobriety days from January 1 through the selected date, inclusive.\n\nOnly later observations will be added.\n\nMissing days leave the balance unknown.\n\nA prior-year baseline is ignored in the new year.\n\nInclude the verified Bonus total, including zero if none.\n\nFor past days, see the [Hello Watt EDF Zen Flex calendar]({hello_watt_url}).",
         "data": {
           "baseline_enabled": "Enter days before installation",
           "baseline_date": "Count through this date, inclusive",
