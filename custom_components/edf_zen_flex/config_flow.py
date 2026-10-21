@@ -89,7 +89,12 @@ class SettingsSteps:
                 errors["base"] = "invalid_baseline"
             else:
                 return self.async_create_entry(title=self._result_title, data=candidate)
-        return self.async_show_form(step_id="history", data_schema=history_schema({**self._values, **(user_input or {})}), errors=errors)
+        return self.async_show_form(
+            step_id="history",
+            data_schema=history_schema({**self._values, **(user_input or {})}),
+            errors=errors,
+            description_placeholders={"hello_watt_url": "https://www.hellowatt.fr/calendrier-zen-flex-edf/"},
+        )
 
 
 class ZenFlow(SettingsSteps, config_entries.ConfigFlow, domain=DOMAIN):
