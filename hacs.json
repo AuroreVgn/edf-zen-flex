@@ -1,1 +1,5 @@
-{"name":"EDF Zen Flex","render_readme":true}
+{
+  "name": "EDF Zen Flex",
+  "render_readme": true,
+  "country": "FR"
+}
