@@ -74,7 +74,7 @@
       },
       "history": {
         "title": "Compteur initial annuel",
-        "description": "Facultatif : indiquez le total vérifié des jours Sobriété depuis le 1er janvier jusqu’à la date choisie incluse.\n\nSeuls les jours suivants seront ajoutés.\n\nSi des jours manquent, le solde reste inconnu.\n\nLe compteur initial est ignoré dès le changement d’année.\n\nRenseignez également le total vérifié des jours Bonus, y compris zéro s’il n’y en a eu aucun.\n\nLes jours Éco passés sont calculés automatiquement, Bonus inclus.\n\nPour retrouver les journées passées, consultez le [calendrier EDF Zen Flex de Hello Watt](https://www.hellowatt.fr/calendrier-zen-flex-edf/).",
+        "description": "Facultatif : indiquez le total vérifié des jours Sobriété depuis le 1er janvier jusqu’à la date choisie incluse.\n\nSeuls les jours suivants seront ajoutés.\n\nSi des jours manquent, le solde reste inconnu.\n\nLe compteur initial est ignoré dès le changement d’année.\n\nRenseignez également le total vérifié des jours Bonus, y compris zéro s’il n’y en a eu aucun.\n\nLes jours Éco passés sont calculés automatiquement, Bonus inclus.\n\nPour retrouver les journées passées, consultez le [calendrier EDF Zen Flex de Hello Watt]({hello_watt_url}).",
         "data": {
           "baseline_enabled": "Renseigner les journées passées avant l’installation",
           "baseline_date": "Compteur arrêté à cette date, journée incluse",
