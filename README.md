@@ -204,6 +204,7 @@ actions:
 
 mode: single
 ```
+Cette automatisation doit être adapté à votre installation et d'autres actions telles que des notifications peuvent être ajoutée.
 
 ### Passage en heures creuses
 ```yaml
@@ -228,6 +229,7 @@ actions:
 
 mode: single
 ```
+Cette automatisation doit être adapté à votre installation et d'autres actions telles que des notifications peuvent être ajoutée.
 
 ## 🔔 Surveillance des tarifs EDF
 
