@@ -25,11 +25,12 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 - [📦 Installation](#toc-section-2)
 - [⚙️ Configuration](#toc-section-3)
 - [📊 Entités créées](#toc-section-4)
-- [🔔 Surveillance des tarifs EDF](#toc-section-5)
-- [🧩 Carte Lovelace](#toc-section-6)
-- [ℹ️ Fonctionnement et limites](#toc-section-7)
-- [🤝 Signaler un problème](#toc-section-8)
-- [📄 Licence](#toc-section-9)
+- [🤖 Exemples d'automatisation - jour sobriété](#toc-section-5)
+- [🔔 Surveillance des tarifs EDF](#toc-section-6)
+- [🧩 Carte Lovelace](#toc-section-7)
+- [ℹ️ Fonctionnement et limites](#toc-section-8)
+- [🤝 Signaler un problème](#toc-section-9)
+- [📄 Licence](#toc-section-10)
 
 <a name="toc-section-1"></a>
 
@@ -179,6 +180,55 @@ La date des **tarifs du contrat** et celle de la **dernière grille publique EDF
 
 <a name="toc-section-5"></a>
 
+## 🤖 Exemples d'automatisation - jour sobriété
+### Passage en heures pleines
+```yaml
+alias: Chauffage – Éco en heures pleines sobriété
+description: "Passage du chauffage en mode éco lors des heures pleines en jour sobriété"
+
+triggers:
+  - trigger: time
+    at: "07:55:00"
+  - trigger: time
+    at: "17:55:00"
+
+conditions:
+  - condition: state
+    entity_id: sensor.edf_zen_flex_aujourdhui
+    state: "sobriete"
+
+actions:
+  - action: switch.turn_on
+    target:
+      entity_id: switch.chauffage_mode_eco
+
+mode: single
+```
+
+### Passage en heures creuses
+```yaml
+alias: Chauffage – Normal en heures creuses sobriété
+description: "Passage du chauffage en mode normal lors des heures creuses en jour sobriété"
+
+triggers:
+  - trigger: time
+    at: "13:00:00"
+  - trigger: time
+    at: "20:00:00"
+
+conditions:
+  - condition: state
+    entity_id: sensor.edf_zen_flex_aujourdhui
+    state: "sobriete"
+
+actions:
+  - action: switch.turn_off
+    target:
+      entity_id: switch.chauffage_mode_eco
+
+mode: single
+```
+
 ## 🔔 Surveillance des tarifs EDF
 
 Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure de Paris**. Si la grille publique détectée diffère des tarifs enregistrés, une notification persistante Home Assistant est créée.
@@ -205,6 +255,7 @@ Elle permet notamment d'afficher le calendrier des journées, les compteurs et l
 - Les périodes HP/HC sont définies localement et doivent correspondre à votre contrat.
 - Les données et compteurs sont calculés sur l'année civile, en heure de Paris.
 - La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
+- Seul le type de jour remonte, pas les attendus (ie. consommer plus ou moins) pour le jour Bonus.
 
 <a name="toc-section-8"></a>
 
