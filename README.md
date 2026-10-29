@@ -53,6 +53,12 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 
 ## 📦 Installation
 
+> [!NOTE]
+> **Marketplace / HACS — Home Assistant 2026.11+ :** ouvrez **Paramètres → Marketplace** (intégré à Home Assistant, sans installation séparée de HACS). Recherchez ce projet ou ajoutez `https://github.com/AuroreVgn/edf-zen-flex` comme **dépôt personnalisé** s'il n'est pas encore référencé. Sur Home Assistant **2026.10 et versions antérieures**, utilisez HACS comme indiqué ci-dessous. Les liens `hacs_repository` existants restent compatibles. Après installation, configurez l'intégration dans Paramètres → Appareils et services. Ce projet reste communautaire et non officiel.
+>
+> **EN:** On Home Assistant **2026.11+**, open **Settings → Marketplace** (built in; no separate HACS installation). Search for this project or add the GitHub URL above as a **custom repository**. On **2026.10 or earlier**, continue using HACS. Existing `hacs_repository` links work in both. This is a community project, not an official Home Assistant integration.
+
+
 ### Option A — HACS (recommandé)
 
 #### Automatiquement
