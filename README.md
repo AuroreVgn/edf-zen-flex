@@ -282,7 +282,7 @@ La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l
 
 Ouvrir une [issue GitHub](https://github.com/AuroreVgn/edf-zen-flex/issues) en indiquant la version de Home Assistant, la version de l'intégration, le comportement attendu et les journaux utiles **sans données personnelles**.
 
-<a name="toc-section-9"></a>
+<a name="toc-section-10"></a>
 
 ## 📄 Licence
 
