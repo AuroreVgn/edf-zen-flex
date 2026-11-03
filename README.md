@@ -47,7 +47,7 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 - Vérification quotidienne des tarifs EDF, notification persistante en cas de différence détectée, sans changement automatique des prix enregistrés.
 - Capteurs de diagnostic relatifs aux tarifs et aux actualisations.
 - Bouton d'actualisation manuelle.
-- Compatibilité avec une [carte Lovelace dédiée](https://github.com/AuroreVgn/edf-zen-flex-card), maintenue dans un dépôt séparé.
+- **Carte Lovelace EDF Zen Flex intégrée** : modes complet/compact, calendrier, tarifs et éditeur visuel, sans installation d'un second plugin.
 
 <a name="toc-section-2"></a>
 
@@ -226,23 +226,33 @@ Une vérification infructueuse ne remplace pas les tarifs existants.
 
 <a name="toc-section-6"></a>
 
-## 🧩 Carte Lovelace
+## 🧩 Carte Lovelace intégrée
 
-La carte est distribuée dans un dépôt distinct : **[EDF Zen Flex Card](https://github.com/AuroreVgn/edf-zen-flex-card)**.
+La **EDF Zen Flex Card** est désormais incluse dans le dépôt principal. Aucune installation séparée du plugin n'est nécessaire avec une version de l'intégration contenant cette fonctionnalité.
 
-Elle permet notamment d'afficher le calendrier des journées, les compteurs et les prix de la période courante. Consultez son dépôt pour les instructions d'installation et de configuration.
+1. Installer ou mettre à jour **EDF Zen Flex** et redémarrer Home Assistant.
+2. Ajouter une carte manuelle :
 
-<a name="toc-section-7"></a>
+   ```yaml
+   type: custom:zen-flex-card
+   title: EDF Zen Flex
+   mode: full
+   show_tariffs: true
+   show_remaining: true
+   ```
 
-## ℹ️ Fonctionnement et limites
+3. La ressource `/edf_zen_flex/zen-flex-card.js` est enregistrée automatiquement lorsque Lovelace le permet. Si elle est absente, l'ajouter comme **Module JavaScript** dans les ressources du tableau de bord.
 
-- L'historique est constitué progressivement à partir des réponses EDF : l'intégration ne reconstitue pas automatiquement toutes les journées passées.
-- Le service EDF peut être indisponible ou modifier le format de ses réponses.
-- La disponibilité des informations concernant demain dépend des données effectivement publiées.
-- Les périodes HP/HC sont définies localement et doivent correspondre à votre contrat.
-- Les données et compteurs sont calculés sur l'année civile, en heure de Paris.
-- La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
-- Seul le type de jour remonte, pas les attendus (ie. consommer plus ou moins) pour le jour Bonus.
+### Migration depuis l'ancienne carte indépendante
+
+1. Vérifier que `/edf_zen_flex/zen-flex-card.js` est accessible après la mise à jour de l'intégration.
+2. Supprimer l'ancienne ressource `/hacsfiles/edf-zen-flex_card/zen-flex-card.js` ou `/local/zen-flex-card.js`, si présente, **sans supprimer la nouvelle ressource**.
+3. Désinstaller l'ancien plugin EDF Zen Flex Card depuis HACS / Marketplace.
+4. Actualiser le navigateur. Les configurations existantes `type: custom:zen-flex-card` sont conservées.
+
+Ne pas charger les deux scripts en parallèle : ils déclarent le même type de carte.
+
+La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l'affichage des tarifs et l'éditeur graphique. Les captures historiques sont disponibles dans le [dépôt de la carte](https://github.com/AuroreVgn/edf-zen-flex_card).
 
 <a name="toc-section-8"></a>
 
