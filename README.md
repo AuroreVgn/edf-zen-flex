@@ -230,6 +230,16 @@ Une vérification infructueuse ne remplace pas les tarifs existants.
 
 La **EDF Zen Flex Card** est désormais incluse dans le dépôt principal. Aucune installation séparée du plugin n'est nécessaire avec une version de l'intégration contenant cette fonctionnalité.
 
+### Aperçus de la carte Lovelace
+
+| Mode compact (clair) | Mode complet (sombre) |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/AuroreVgn/edf-zen-flex_card/main/assets/light.png" alt="EDF Zen Flex Card — mode compact clair" width="340"> | <img src="https://raw.githubusercontent.com/AuroreVgn/edf-zen-flex_card/main/assets/dark.png" alt="EDF Zen Flex Card — mode complet sombre" width="340"> |
+
+Images issues du [dépôt historique de la carte](https://github.com/AuroreVgn/edf-zen-flex_card/tree/main/assets). La documentation et l'installation de la carte intégrée sont maintenues ici.
+
+### Installation et migration
+
 1. Installer ou mettre à jour **EDF Zen Flex** et redémarrer Home Assistant.
 2. Ajouter une carte manuelle :
 
@@ -252,7 +262,7 @@ La **EDF Zen Flex Card** est désormais incluse dans le dépôt principal. Aucun
 
 Ne pas charger les deux scripts en parallèle : ils déclarent le même type de carte.
 
-La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l'affichage des tarifs et l'éditeur graphique. Les captures historiques sont disponibles dans le [dépôt de la carte](https://github.com/AuroreVgn/edf-zen-flex_card).
+La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l'affichage des tarifs et l'éditeur graphique. Les captures sont présentées ci-dessus ; le [dépôt historique](https://github.com/AuroreVgn/edf-zen-flex_card) conserve les anciennes versions.
 
 <a name="toc-section-7"></a>
 
