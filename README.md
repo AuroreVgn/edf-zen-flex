@@ -17,7 +17,15 @@ Intégration personnalisée **Home Assistant** dédiée à l'offre d'électricit
 
 ## ☕ Soutenir le projet
 
-Si cette intégration vous est utile, vous pouvez [soutenir son développement sur Ko-fi](https://ko-fi.com/aurorevgn).
+Si cette intégration vous est utile et que vous souhaitez soutenir son développement et sa maintenance :
+
+<p>
+  <a href="https://ko-fi.com/aurorevgn">
+    <img src="https://storage.ko-fi.com/cdn/kofi4.png?v=3"
+         alt="Support me on Ko-fi"
+         height="45">
+  </a>
+</p>
 
 ## 📑 Sommaire
 
