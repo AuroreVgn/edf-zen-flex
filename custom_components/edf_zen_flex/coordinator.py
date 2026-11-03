@@ -19,6 +19,7 @@ class ZenCoordinator(DataUpdateCoordinator):
     def __init__(self, hass, entry):
         self.entry = entry
         super().__init__(hass, logging.getLogger(__name__), name=DOMAIN,
+            config_entry=entry,
             update_interval=timedelta(minutes=self.settings.get("interval", DEFAULT_INTERVAL)))
         self.store = Store(hass, 1, f"{DOMAIN}.{entry.entry_id}")
         self.history = {}
