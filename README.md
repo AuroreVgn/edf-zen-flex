@@ -254,6 +254,18 @@ Ne pas charger les deux scripts en parallèle : ils déclarent le même type de 
 
 La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l'affichage des tarifs et l'éditeur graphique. Les captures historiques sont disponibles dans le [dépôt de la carte](https://github.com/AuroreVgn/edf-zen-flex_card).
 
+<a name="toc-section-7"></a>
+
+## ℹ️ Fonctionnement et limites
+
+- L'historique est constitué progressivement à partir des réponses EDF : l'intégration ne reconstitue pas automatiquement toutes les journées passées.
+- Le service EDF peut être indisponible ou modifier le format de ses réponses.
+- La disponibilité des informations concernant demain dépend des données effectivement publiées.
+- Les périodes HP/HC sont définies localement et doivent correspondre à votre contrat.
+- Les données et compteurs sont calculés sur l'année civile, en heure de Paris.
+- La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
+- Seul le type de jour remonte, pas les attendus (ie. consommer plus ou moins) pour le jour Bonus.
+
 <a name="toc-section-8"></a>
 
 ## 🤝 Signaler un problème
