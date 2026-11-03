@@ -6,8 +6,10 @@ from homeassistant.helpers.event import async_track_utc_time_change, async_track
 from .const import DEFAULT_INTERVAL
 from .const import DOMAIN
 from .coordinator import ZenCoordinator
+from .card import async_setup_card
 
 async def async_setup_entry(hass, entry):
+    await async_setup_card(hass)
     coordinator = ZenCoordinator(hass, entry)
     await coordinator.async_load()
     await coordinator.async_config_entry_first_refresh()
