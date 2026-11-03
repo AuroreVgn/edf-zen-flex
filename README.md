@@ -35,7 +35,7 @@ Si cette intégration vous est utile et que vous souhaitez soutenir son dévelop
 - [📊 Entités créées](#toc-section-4)
 - [🤖 Exemples d'automatisation - jour sobriété](#toc-section-5)
 - [🔔 Surveillance des tarifs EDF](#toc-section-6)
-- [🧩 Carte Lovelace](#toc-section-7)
+- [🧩 Carte Lovelace intégrée](#toc-section-7)
 - [ℹ️ Fonctionnement et limites](#toc-section-8)
 - [🤝 Signaler un problème](#toc-section-9)
 - [📄 Licence](#toc-section-10)
@@ -224,6 +224,8 @@ mode: single
 ```
 Cette automatisation doit être adapté à votre installation et d'autres actions telles que des notifications peuvent être ajoutée.
 
+<a name="toc-section-6"></a>
+
 ## 🔔 Surveillance des tarifs EDF
 
 Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure de Paris**. Si la grille publique détectée diffère des tarifs enregistrés, une notification persistante Home Assistant est créée.
@@ -232,7 +234,7 @@ Une vérification est lancée au démarrage, puis chaque jour à **10 h, heure d
 
 Une vérification infructueuse ne remplace pas les tarifs existants.
 
-<a name="toc-section-6"></a>
+
 
 <a name="toc-section-7"></a>
 
