@@ -236,8 +236,6 @@ La **EDF Zen Flex Card** est désormais incluse dans le dépôt principal. Aucun
 | :---: | :---: |
 | <img src="https://raw.githubusercontent.com/AuroreVgn/edf-zen-flex_card/main/assets/light.png" alt="EDF Zen Flex Card — mode compact clair" width="340"> | <img src="https://raw.githubusercontent.com/AuroreVgn/edf-zen-flex_card/main/assets/dark.png" alt="EDF Zen Flex Card — mode complet sombre" width="340"> |
 
-Images issues du [dépôt historique de la carte](https://github.com/AuroreVgn/edf-zen-flex_card/tree/main/assets). La documentation et l'installation de la carte intégrée sont maintenues ici.
-
 ### Installation et migration
 
 1. Installer ou mettre à jour **EDF Zen Flex** et redémarrer Home Assistant.
