@@ -5,12 +5,14 @@
     "@AuroreVgn"
   ],
   "config_flow": true,
+  "dependencies": [
+    "http"
+  ],
   "documentation": "https://github.com/AuroreVgn/edf-zen-flex",
   "integration_type": "service",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/AuroreVgn/edf-zen-flex/issues",
   "requirements": [],
-  "dependencies": ["http"],
   "single_config_entry": true,
   "version": "0.0.2"
 }
