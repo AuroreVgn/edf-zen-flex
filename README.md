@@ -226,6 +226,8 @@ Une vérification infructueuse ne remplace pas les tarifs existants.
 
 <a name="toc-section-6"></a>
 
+<a name="toc-section-7"></a>
+
 ## 🧩 Carte Lovelace intégrée
 
 La **EDF Zen Flex Card** est désormais incluse dans le dépôt principal. Aucune installation séparée du plugin n'est nécessaire avec une version de l'intégration contenant cette fonctionnalité.
@@ -262,7 +264,7 @@ Ne pas charger les deux scripts en parallèle : ils déclarent le même type de 
 
 La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l'affichage des tarifs et l'éditeur graphique. Les captures sont présentées ci-dessus ; le [dépôt historique](https://github.com/AuroreVgn/edf-zen-flex_card) conserve les anciennes versions.
 
-<a name="toc-section-7"></a>
+<a name="toc-section-8"></a>
 
 ## ℹ️ Fonctionnement et limites
 
@@ -274,7 +276,7 @@ La carte conserve les modes **complet** et **compact**, le calendrier mensuel, l
 - La surveillance des grilles publiques n'est pas une confirmation de leur application à un contrat individuel.
 - Seul le type de jour remonte, pas les attendus (ie. consommer plus ou moins) pour le jour Bonus.
 
-<a name="toc-section-8"></a>
+<a name="toc-section-9"></a>
 
 ## 🤝 Signaler un problème
 
