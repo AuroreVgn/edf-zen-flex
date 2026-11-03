@@ -53,51 +53,31 @@ Si cette intégration vous est utile, vous pouvez [soutenir son développement s
 
 ## 📦 Installation
 
-> [!NOTE]
-> **Marketplace / HACS — Home Assistant 2026.11+ :** ouvrez **Paramètres → Marketplace** (intégré à Home Assistant, sans installation séparée de HACS). Recherchez ce projet ou ajoutez `https://github.com/AuroreVgn/edf-zen-flex` comme **dépôt personnalisé** s'il n'est pas encore référencé. Sur Home Assistant **2026.10 et versions antérieures**, utilisez HACS comme indiqué ci-dessous. Les liens `hacs_repository` existants restent compatibles. Après installation, configurez l'intégration dans Paramètres → Appareils et services. Ce projet reste communautaire et non officiel.
->
+### Option A — Marketplace / HACS (recommandé)
 
+**EDF Zen Flex est en cours de référencement dans le catalogue HACS par défaut.** Tant que la [PR de référencement](https://github.com/hacs/default/pull/12366) n'est pas fusionnée, utilisez le dépôt personnalisé indiqué ci-dessous.
 
-### Option A — HACS (recommandé)
+Une fois le référencement accepté :
 
-#### Automatiquement
+1. Ouvrir **Paramètres → Marketplace** (Home Assistant 2026.11+) ou **HACS** sur les versions antérieures.
+2. Rechercher **EDF Zen Flex** dans le catalogue.
+3. Installer l'intégration, puis redémarrer Home Assistant si nécessaire.
+4. Aller dans **Paramètres → Appareils et services → Ajouter une intégration** et rechercher **EDF Zen Flex**.
 
-[![Ouvrir Home Assistant et ajouter ce dépôt dans HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AuroreVgn&repository=edf-zen-flex&category=integration)
+[![Ouvrir le dépôt dans HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AuroreVgn&repository=edf-zen-flex&category=integration)
 
-#### Manuellement
+### Option B — Dépôt personnalisé (tant que le référencement est en attente)
 
-Cette intégration étant un dépôt personnalisé, il faut l'ajouter une première fois dans HACS :
+1. Ouvrir **Marketplace / HACS → Dépôts personnalisés**.
+2. Ajouter `https://github.com/AuroreVgn/edf-zen-flex` en catégorie **Intégration**.
+3. Rechercher **EDF Zen Flex** et l'installer.
+4. Redémarrer Home Assistant si nécessaire, puis configurer l'intégration.
 
-1. Ouvrir **HACS** → **Intégrations**.
-2. Ouvrir le menu **⋮** → **Dépôts personnalisés**.
-3. Ajouter :
+### Option C — Installation manuelle
 
-   ```text
-   https://github.com/AuroreVgn/edf-zen-flex
-   ```
-
-4. Choisir la catégorie **Intégration**.
-5. Rechercher **EDF Zen Flex** dans HACS puis installer l'intégration.
-6. Redémarrer Home Assistant.
-
-### Option B — Installation manuelle
-
-1. Télécharger la dernière version du dépôt.
-2. Copier le dossier :
-
-   ```text
-   custom_components/edf_zen_flex
-   ```
-
-   dans :
-
-   ```text
-   /config/custom_components/edf_zen_flex
-   ```
-
-3. Redémarrer Home Assistant.
-
-Après l'installation, aller dans **Paramètres → Appareils et services → Ajouter une intégration**, puis rechercher **EDF Zen Flex**.
+1. Télécharger la [dernière version](https://github.com/AuroreVgn/edf-zen-flex/releases).
+2. Copier `custom_components/edf_zen_flex` dans `/config/custom_components/edf_zen_flex`.
+3. Redémarrer Home Assistant et ajouter **EDF Zen Flex** dans **Paramètres → Appareils et services**.
 
 <a name="toc-section-3"></a>
 
